@@ -4,8 +4,6 @@ from decouple import config
   
 bot=telebot.TeleBot(config('BOT_TOKEN'))
 
-  
-bot=telebot.TeleBot(token=bot_token)
 def find_at(msg):
   for text in msg:
     if '@' in text:
