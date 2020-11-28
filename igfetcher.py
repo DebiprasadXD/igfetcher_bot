@@ -1,8 +1,8 @@
 import telebot
 import time
-
-
-bot_token='your_bot_token'
+from decouple import config
+  
+bot=telebot.TeleBot(config('BOT_TOKEN'))
 
   
 bot=telebot.TeleBot(token=bot_token)
@@ -37,11 +37,3 @@ while True :
     bot.polling()
   except Expectation:
     time.sleep(15)
-   
-     
-     
-    
- 
-       
-     
- 
